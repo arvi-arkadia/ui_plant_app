@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ui_plant_app/constants.dart';
 import 'package:ui_plant_app/screens/home/components/header_with_searchbox.dart';
+import 'package:ui_plant_app/screens/home/components/title_with_morebtn.dart';
 
 class Body extends StatelessWidget {
   const Body({super.key});
@@ -14,6 +15,10 @@ class Body extends StatelessWidget {
       child: Column(
         children: [
           HeaderWithSearchBox(),
+          TileWithMoreBtn(
+            titile: 'Recomended',
+            press: () {},
+          ),
         ],
       ),
     );
